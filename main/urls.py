@@ -4,6 +4,6 @@ from apps.users_app import views
 
 urlpatterns = [
     url('admin/', admin.site.urls),
-    url(r'^$', views.index),
+    url(r'^$', views.index, name='index'),
     url(r'^users_app/', include('apps.users_app.urls')),
 ]

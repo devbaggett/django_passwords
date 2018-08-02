@@ -6,6 +6,6 @@ from . import views
 app_name = 'users_app'
 
 urlpatterns = [
-    url(r'^$', views.index),
-    url(r'^register/$', views.register)
+    url(r'^$', views.index, name='index'),
+    url(r'^register/$', views.register, name='register')
 ]
